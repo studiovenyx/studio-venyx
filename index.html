@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Venyx Studio: video editing, graphic design, content creator, photo, AI, dan website untuk brand dan kreator.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>Venyx Studio — Creative & Digital Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0A0A0A;--surface:#121212;--line:#262626;--text:#F4F2F0;--mute:#8D8D8D;--ac:#E5231B;--ac-h:#C81D16;--focus:#FF5A52;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font:400 16px/1.7 "Instrument Sans",system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Poppins,"Instrument Sans",sans-serif;font-weight:600;line-height:1.1}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px}
+.w{max-width:1120px;margin:0 auto;padding:0 5vw}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{display:flex;align-items:center;gap:12px;font:600 17px Poppins,sans-serif;letter-spacing:.02em}
+.logo svg{width:30px;height:30px;display:block}
+nav ul{display:flex;gap:30px;list-style:none;padding:0;font-size:14px;color:var(--mute)}
+nav ul a{transition:color .12s}nav ul a:hover{color:var(--text)}
+.btn{display:inline-block;padding:13px 26px;border-radius:999px;background:var(--ac);color:#fff;font-weight:500;border:1px solid var(--ac);cursor:pointer;transition:background .12s,border-color .12s,transform .12s}
+.btn:hover{background:var(--ac-h);border-color:var(--ac-h)}
+.btn:active{transform:scale(.97)}
+.btn.o{background:none;border-color:var(--line);color:var(--text)}
+.btn.o:hover{border-color:var(--ac);background:none}
+.btn.s{padding:9px 20px;font-size:14px}
+section{border-top:1px solid var(--line);padding:110px 0}
+.hero{border:0;padding:150px 0 100px}
+.hero .w{display:grid;grid-template-columns:1fr 340px;gap:6vw;align-items:center}
+.tag{display:block;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute);margin-bottom:22px}
+h1{font-size:clamp(40px,6.4vw,84px);letter-spacing:-.02em}
+h1 em,h2 em{font-style:normal;color:var(--ac)}
+.hero p{max-width:480px;color:var(--mute);margin:26px 0 34px}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:44px}
+.chip{background:var(--surface);border-left:2px solid var(--ac);padding:5px 14px;font-size:13px;color:var(--mute)}
+.phone{width:100%;max-width:340px;aspect-ratio:9/18;border-radius:22px;border:1px solid var(--line);background:var(--surface);box-shadow:0 0 70px rgba(229,35,27,.18);position:relative;overflow:hidden;justify-self:center}
+.phone .cap{position:absolute;left:0;right:0;top:48%;text-align:center;padding:0 22px;font:600 30px/1.2 Poppins,sans-serif;color:#fff;opacity:0;animation:c 8s infinite}
+.phone .cap:nth-of-type(2){animation-delay:2s}.phone .cap:nth-of-type(3){animation-delay:4s}.phone .cap:nth-of-type(4){animation-delay:6s}
+.phone .rec{position:absolute;left:20px;top:20px;font-size:11px;letter-spacing:.14em;color:var(--mute);display:flex;align-items:center;gap:8px}.phone .rec:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ac);animation:b 1s steps(2) infinite}
+@keyframes b{50%{opacity:.2}}
+@keyframes c{0%{opacity:0;transform:translateY(16px) scale(.96)}4%,21%{opacity:1;transform:none}25%,100%{opacity:0;transform:translateY(-16px) scale(1.02)}}
+.phone .cap b{color:#FFD60A;font-weight:600}
+.phone .bar{position:absolute;left:18px;right:18px;bottom:22px;height:3px;background:var(--line)}
+.phone .bar i{display:block;height:100%;background:var(--ac);width:0;animation:p 8s linear infinite}
+@keyframes p{to{width:100%}}
+h2{font-size:clamp(30px,4.6vw,56px);letter-spacing:-.015em;max-width:18ch}
+.about .w{display:grid;grid-template-columns:1fr 1fr;gap:6vw}
+.about p{color:var(--mute);font-size:18px}
+.stats{display:flex;gap:48px;margin-top:36px}.stats b{display:block;font:600 36px Poppins}.stats small{color:var(--mute)}
+.list{margin-top:56px}
+.list>div{display:grid;grid-template-columns:70px 1fr 1.4fr;gap:20px;padding:30px 0;border-top:1px solid var(--line);align-items:baseline}
+.list>div:last-child{border-bottom:1px solid var(--line)}
+.list i{font-style:normal;color:var(--ac);font-size:14px}
+.list h3{font-size:24px}.list p{color:var(--mute)}
+.ct{text-align:center}
+.ct h2{margin:0 auto 34px;max-width:14ch}
+.big{display:block;font:600 clamp(22px,4vw,44px) Poppins,sans-serif;padding:14px 0;transition:color .12s}
+.big:hover{color:var(--ac)}
+.ct .row{justify-content:center;margin-top:34px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mute);font-size:13px}
+footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:860px){nav ul{display:none}.hero .w,.about .w{grid-template-columns:1fr}.list>div{grid-template-columns:40px 1fr}.list p{grid-column:2}section{padding:80px 0}.hero{padding-top:120px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.phone .bar i{width:40%}.phone .cap:first-of-type{opacity:1}}
+</style>
+</head>
+<body>
+<nav><div class="w"><a class="logo" href="#top" aria-label="Venyx Studio"><svg viewBox="0 0 120 120" aria-hidden="true"><polygon fill="#F4F2F0" points="16,14 40,14 60,70 67.5,50 91.5,50 72,106 48,106"/><rect x="80" y="14" width="24" height="24" fill="#E5231B"/></svg>Venyx Studio</a>
+<ul><li><a href="#about">About Us</a></li><li><a href="#product">Product</a></li><li><a href="#benefit">Benefit</a></li><li><a href="#contact">Contact</a></li></ul>
+<a class="btn s" href="#contact">Ngobrol yuk</a></div></nav>
+
+<section class="hero" id="top"><div class="w">
+<div><span class="tag">Creative & Digital Studio</span>
+<h1>Ide kamu, kami bikin <em>hidup.</em></h1>
+<p>Venyx Studio bantu brand dan kreator tampil beda lewat video, desain, konten, foto, AI, sampai website yang enak dilihat dan dipakai.</p>
+<div class="row"><a class="btn" href="#product">Lihat layanan</a><a class="btn o" href="#contact">Hubungi kami</a></div></div>
+<div class="phone" role="img" aria-label="Pratinjau video Venyx Studio"><span class="rec">REC</span><div class="cap">Video <b>Editing</b></div><div class="cap">Graphic <b>Design</b></div><div class="cap">Konten yang <b>hidup</b></div><div class="cap">Website <b>standout</b></div><div class="bar"><i></i></div></div>
+</div></section>
+
+<section class="about" id="about"><div class="w">
+<div><span class="tag">About Us</span><h2>Studio kecil, hasil <em>nggak</em> kecil.</h2></div>
+<div><p>Venyx Studio adalah tim kreatif yang suka ngerjain hal-hal visual. Dari edit video buat selebgram, konten untuk brand F&B, sampai eksperimen AI, kami terbiasa memahami kebutuhan yang beda-beda lalu menerjemahkannya jadi karya yang rapi, konsisten, dan punya karakter.</p>
+<div class="stats"><div><b>6</b><small>Layanan kreatif</small></div><div><b>1</b><small>Tim, satu visi</small></div></div></div>
+</div></section>
+
+<section id="product"><div class="w"><span class="tag">Product</span><h2>Semua kebutuhan kreatif, <em>satu</em> tempat.</h2>
+<div class="list">
+<div><i>01</i><h3>Video Editing</h3><p>Reels, video promo, aftermovie, dan konten performa dengan ritme yang enak ditonton.</p></div>
+<div><i>02</i><h3>Graphic Design</h3><p>Logo, identitas visual, poster, feed sosmed, dan materi promosi yang konsisten.</p></div>
+<div><i>03</i><h3>Content Creator</h3><p>Ide, konsep, sampai produksi konten yang pas dengan karakter brand dan audiensmu.</p></div>
+<div><i>04</i><h3>Photo</h3><p>Foto produk, event, dan portrait dengan look bersih dan siap pakai.</p></div>
+<div><i>05</i><h3>AI Creative</h3><p>Visual dan video berbasis AI untuk konsep yang sulit dibuat dengan cara biasa.</p></div>
+<div><i>06</i><h3>Website</h3><p>Landing page sampai company profile yang cepat, responsif, dan rapi di semua layar.</p></div>
+</div></div></section>
+
+<section id="benefit"><div class="w"><span class="tag">Benefit</span><h2>Kenapa kerja bareng <em>Venyx?</em></h2>
+<div class="list">
+<div><i>01</i><h3>Satu tim, semua beres</h3><p>Video, desain, foto, dan website dikerjakan satu tim, jadi tampilannya nyambung dan kamu nggak repot koordinasi banyak vendor.</p></div>
+<div><i>02</i><h3>Komunikasi santai</h3><p>Brief jelas, revisi wajar, update rutin. Kamu selalu tahu progres project-mu.</p></div>
+<div><i>03</i><h3>Gaya sesuai brand</h3><p>Nggak ada template yang sama untuk semua. Tiap project dibangun dari karakter kamu.</p></div>
+<div><i>04</i><h3>Cepat dan rapi</h3><p>Alur kerja terstruktur supaya hasil selesai tepat waktu tanpa mengorbankan kualitas.</p></div>
+</div></div></section>
+
+<section class="ct" id="contact"><div class="w"><span class="tag">Contact</span><h2>Punya project? Yuk <em>mulai.</em></h2>
+<a class="big" href="mailto:studiovenyx@gmail.com">studiovenyx@gmail.com</a>
+<a class="big" href="https://wa.me/628886195339" target="_blank" rel="noopener">0888-619-5339</a>
+<a class="big" href="https://instagram.com/yoitskall" target="_blank" rel="noopener">@yoitskall</a>
+<div class="row"><a class="btn" href="https://wa.me/628886195339?text=Halo%20Venyx%20Studio%2C%20aku%20mau%20tanya%20soal%20project." target="_blank" rel="noopener">Chat WhatsApp</a><a class="btn o" href="https://instagram.com/yoitskall" target="_blank" rel="noopener">Instagram</a><a class="btn o" href="mailto:studiovenyx@gmail.com">Email</a></div>
+</div></section>
+
+<footer><div class="w"><span>© 2026 Venyx Studio</span><span>Jakarta, Indonesia</span></div></footer>
+</body>
+</html>
